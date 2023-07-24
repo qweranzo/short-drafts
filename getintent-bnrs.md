@@ -3,7 +3,7 @@
 3) Распаковываем архивы (можно с помощью команды unzipall)
 4) Оборачиваем `<div id="bs"></div></b>` в тег `<div Stage>...</div>` c помощью команды: 
 
-<span style="color: green">```find . -iname *.html -exec sed -i 's/<div id="bs"><\/div>/\n\t<div id="Stage">\n\t\t<div id="bs"><\/div>\n\t<\/div>\n\t/g' {} \;```</span>
++```find . -iname *.html -exec sed -i 's/<div id="bs"><\/div>/\n\t<div id="Stage">\n\t\t<div id="bs"><\/div>\n\t<\/div>\n\t/g' {} \;```
 
 
 5) Меняем во всех html-файлах слова, включающие в себя слово "Click" c помощью: 
