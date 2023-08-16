@@ -6,5 +6,5 @@
 Для Linux (Windows + WSL): 
 ```find . -iname *.html -exec sed -i 's/<div id="bs"><\/div>/\n\t<div id="Stage">\n\t\t<div id="bs"><\/div>\n\t<\/div>\n\t/g' {} \;; find . -iname  *.html -exec sed -i 's/Click/Flick/gm' {} \;; find . -iname *.js -exec sed -i 's/CLICK/FLICK/gm' {} \;; find . -iname *.js -exec sed -i 's/click/flick/gm' {} \;; find . -iname *.js -exec sed -i 's/Click/Flick/gm' {} \;; grep -iR 'stage'; echo 'click: '; grep -iR 'click';```
 
-Для MacOS:
+Для MacOS: (перед использованием в первый раз необходимо установить утилиту gnu-sed с помошью команды ```brew install sed```) !
 ```find . -iname "*.html" -exec sed -i '' 's/<div id="bs"><\/div>/\n\t<div id="Stage">\n\t\t<div id="bs"><\/div>\n\t<\/div>\n\t/g' {} \;; find . -iname  "*.html" -exec sed -i '' 's/Click/Flick/g' {} \;; find . -iname "*.js" -exec sed -i '' 's/CLICK/FLICK/g' {} \;; find . -iname "*.js" -exec sed -i '' 's/click/flick/g' {} \;; find . -iname "*.js" -exec sed -i '' 's/Click/Flick/g' {} \;; grep -iR 'stage'; echo 'click: '; grep -iR 'click';```
